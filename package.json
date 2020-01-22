@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Itope84/vue-tailwind-mix-purgecss-setup#readme",
   "devDependencies": {
     "laravel-mix": "^5.0.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.1.4"
   }
 }
