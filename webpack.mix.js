@@ -20,9 +20,18 @@ mix
     postCss: [tailwindcss('./tailwind.config.js')]
   });
 
-mix.options({
-  hmrOptions: {
-    host: 'laravel.dev.local', // site's host name
-    port: 8080
-  }
-});
+if (process.env.NODE_ENV === 'development') {
+  mix.webpackConfig({
+    //   entry: './src/app.js',
+    output: {
+      path: path.join(__dirname, '/dist'),
+      filename: 'bundle.js',
+      publicPath: '/'
+    },
+    devServer: {
+      proxy: {
+        '!**/*.(js|css)': { target: 'http://localhost:3000' }
+      }
+    }
+  });
+}

@@ -1,7 +1,5 @@
 {
-    "/dist/app.js": "/dist/app.js",
+    "/bundle.js": "/bundle.js",
     "/dist/app.css": "/dist/app.css",
-    "/dist/app.94cc4caa8fd184089711.hot-update.js": "/dist/app.94cc4caa8fd184089711.hot-update.js",
-    "/dist/app.963538ae9bd38ae572f7.hot-update.js": "/dist/app.963538ae9bd38ae572f7.hot-update.js",
-    "/dist/app.0914063fb6150cfa226d.hot-update.js": "/dist/app.0914063fb6150cfa226d.hot-update.js"
+    "/dist/app.394e10dc141157cef1d4.hot-update.js": "/dist/app.394e10dc141157cef1d4.hot-update.js"
 }

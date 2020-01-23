@@ -7,6 +7,8 @@ const app = express();
 // server configuration
 const PORT = 3000;
 
+app.use(express.static('dist'));
+
 // create a route for the app
 app.get('/', (req, res) => {
   res.sendFile('./index.html', { root: __dirname + '/dist/' });

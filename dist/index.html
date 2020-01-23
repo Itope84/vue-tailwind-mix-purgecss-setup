@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Vue + Laravel Mix + Tailwind CSS setup</title>
-    <link rel="stylesheet" href="./app.css" />
+    <!-- don't forget to uncomment this in production -->
+    <!-- <link rel="stylesheet" href="http://localhost:8080/app.css" /> -->
   </head>
   <body>
     <noscript>
@@ -15,6 +16,8 @@
       >
     </noscript>
     <div id="app"></div>
-    <script src="http://localhost:8080/app.js"></script>
+    <script src="http://localhost:8080/bundle.js"></script>
+    <!-- don't forget to comment the above and uncomment this in production -->
+    <!-- <script src="./bundle.js"></script> -->
   </body>
 </html>
